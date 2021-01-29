@@ -1,0 +1,329 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    max-width: 1500px;
+    background: linear-gradient(to top, #021B79, #0575E6);
+    background-color: #020202;
+    background-image: url("/images/brick-wall.png");
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.header {
+    margin: auto;
+    padding: initial;
+    text-align: center;
+}
+
+#logo {
+    width: 25%;
+}
+
+.leftcolumn {
+    float: left;
+    width: 72%; 
+    margin-left: 50px;
+}
+
+.rightcolumn {
+    float: right;
+    width: 21%;
+    margin-right: 30px;
+}
+
+.postimg {
+    width: 100%;
+}
+
+.postimg img {
+    height: auto;
+    width: 600px;
+}
+
+.popular img {
+    height: auto;
+    width: 200px;
+}
+
+.card {
+    position:initial;
+    background-color: #FBFBFF;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px hidden #000;
+    box-shadow: 0 5px 0 #dedede;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    width:80%;    
+    text-align: center;
+    margin: 50px auto;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 5px 0 #dedede;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 5px 0 #dedede;
+}
+
+    /* By Dominik Biedebach @domobch */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav ul:first-child {
+    float:left;
+}
+
+.back-to-top, .addpost {
+    position: fixed;
+    bottom: 2em;
+    right: 0;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.back-to-top:hover, .addpost:hover {
+    background-color: rgba(135, 135, 135, 0.50);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.addpost {
+    bottom: 10.8em;
+}
+
+.last{
+    content: ".";
+    margin-left: 70%;
+}
+
+.form {
+    width: 36%;
+    text-align: center;
+    margin: 300px auto;
+    background: #fff;
+    padding: 15px 25px 15px 5px;
+    box-shadow: 0 5px 0 #dedede;
+}
+
+.form ul li a {
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.form ul {
+    list-style: none;
+}
+
+.form ul li {
+    margin: 15px;
+    margin-right: 41px;
+    padding: 15px;
+}
+
+.loginButton, #back {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 15px 10px;
+    height: 26px;
+}
+
+#back:visited {
+    color: black;
+}
+
+/* Follow Me Style*/
+.social a img{
+    height: 32px;
+    padding: 0 5px;
+}
+
+/* GALLERY STYLE */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    margin: 75px auto;
+    background: #fff;
+    padding: 25px 25px;
+    box-shadow: 0 5px 0 #dedede;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child {
+    display: initial;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 25px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.galleryrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+    width:100%;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+#lblMessage {
+    border: none;
+}
+
+.registerButton {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.registerInput li input {
+    border-radius: 5px;
+    border: solid 1px;
+    box-shadow: gray 1px 1px;
+}
+
+.postheader {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.postimage {
+    padding: 25px 25px 25px 25px;
+}
+
+.postparagraph {
+    margin-bottom: 15px;
+    line-height: 1.7em;
+}
+
+.postdate {
+    margin-top: 15px;
+    float:right;
+    align-self:baseline;
+}
